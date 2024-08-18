@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    />
+    <title>Controle de carrinhos</title>
+  </head>
+  <body>
+    <div id="banner">
+      <img
+        src="./banner.jpg"
+        alt="Criança com as mãos no volante de um carro"
+      />
+      <h1>Controle de carrinhos</h1>
+    </div>
+    <main>
+      <form id="cadastrar-carrinho">
+        <div class="input-wrapper">
+          <div>
+            <label for="name">Nome da criança:</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div>
+            <label for="id">Cod. Identificador:</label>
+            <input type="text" id="id" name="id" required />
+          </div>
+        </div>
+        <button type="submit">Cadastrar</button>
+      </form>
+      <ul id="carrinhos"></ul>
+    </main>
+    <footer>
+      <p>
+        Desenvolvido por
+        <a href="https://www.github.com/kurorolucife" target="_blank">Kuroro</a>
+      </p>
+      <p>
+        Foto do banner por
+        <a
+          href="https://www.pexels.com/pt-br/foto/menina-garota-moca-sentado-4481962/"
+          target="_blank"
+          >cottonbro studio</a
+        >
+      </p>
+    </footer>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
